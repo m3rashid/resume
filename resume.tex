@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original author:
+% MD Rashid Hussain (http://m3rashid.netlify.app)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{MD Rashid}{Hussain}{\urlstyle{same}
+\href{http://m3rashid.in}{m3rashid.in} | 
+\href{mailto:m3rashid.hussain@gmail.com}{m3rashid.hussain@gmail.com} | 
+\href{mailto:md2000399@st.jmi.ac.in}{md2000399@st.jmi.ac.in} | 
+\href(tel:+918002594916}{+91 8002594916}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Jamia Millia Islamia}
+\descript{B.Tech in Computer Science}
+\location{Jamia Nagar, Okhla | New Delhi, IN}
+\sectionsep
+
+\subsection{Sayyid Hamid Senior \\ Secondary School}
+\descript{Intermediate Science}
+\location{AMU Campus, Aligarh | UP, IN}
+\sectionsep
+
+\subsection{DAV Public School}
+\location{Deeptinagar, NTPC, Kahalgaon}
+\location{Bhagalpur |  Bihar, IN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/m3rashid}{\bf m3rashid} \\
+LinkedIn:// \href{https://www.linkedin.com/in/m3rashid}{\bf m3rashid} \\
+Twitter:// \href{https://twitter.com/m3_rashid}{\bf @m3\_rashid} \\
+Website:// \href{https://m3rashid.in}{\bf m3rashid.in} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+JavaScript \textbullet{} TypeScript \textbullet{} C++
+\textbullet{} Python \textbullet{} Go \textbullet{} SQL \\
+HTML \textbullet{} CSS \textbullet{} React.Js \textbullet{}
+Next.Js \textbullet{} React Native \\
+Node.Js \textbullet{} Express \textbullet{} Flask \textbullet{} Django \textbullet{}
+Go Fiber \textbullet{} Mux \\
+MongoDB \textbullet{} PostgresQL \textbullet{} MySQL \\
+\sectionsep
+
+\subsection{Soft Skills}
+Presentation Skills \textbullet{} Problem solving \textbullet{} 
+Teamwork \textbullet{} Leadership \textbullet{} Communication
+\textbullet{} Critical thinking \textbullet{} Management \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{M16 Labs}
+\descript{| Software Engineering Intern }
+\location{Feb 2022 - May 2022 | Remote}
+\sectionsep
+
+\runsubsection{Vinnovate Technologies}
+\descript{| Product Engineering Intern }
+\location{Dec 2021 – Jan 2022 | Remote}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteer Work
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteer Work}
+\runsubsection{Shiksha Sopan, IIT Kanpur}
+\descript{| Frontend Developer}
+\location{June 2022 – July 2022 | Remote}
+\sectionsep
+
+\runsubsection{College Societies}
+\descript{| Web Development Lead}
+\location{May 2021 – September 2021 | New Delhi}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
