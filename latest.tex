@@ -1,0 +1,227 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm,columnsep=0.8cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{fontawesome5}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{MD Rashid Hussain} 
+\tagline{Full Stack Developer}
+
+% Cropped to square from
+%% You can add multiple photos on the left or right
+% \photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \homepage{m3rashid.in}
+  \homepage{blogs.m3rashid.in} ~~~~
+  \email{m3rashid.hussain@gmail.com}
+  \phone{+91 8009594916}
+  \twitter{@m3_rashid}
+  \linkedin{linkedin.com/in/m3rashid}
+  \github{github.com/m3rashid} 
+  % \gitlab{gitlab.com/m3rashid}
+  \location{Jamia Nagar, Okhla, 110025, India}
+}
+
+\makecvheader
+
+\divider
+
+I am a passionate and innovative full-stack developer for more than two years now. Working with tight deadlines and strict requirements has sharpened my logical, analytical, and collaboration skills over time. Most of the tools, I use are open-source software, and contributed to various open-source projects.
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.70}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Professional Experience}
+
+\large \textcolor{VividPurple}{\href{https://www.trakkia.com}{\textbf{Trakkia Technologies}}} - SDE Intern ~~~~~~ \normalsize \faCalendar Sept 2022 - Jan 2023
+
+\begin{itemize}
+  \item Optimized frontend build times from 72 minutes to 11 minutes 
+  \item Set up CI/CD for automatic deployments to AWS
+  \item Implemented the "custom dashboard builder" feature from scratch
+  \item Used : \textcolor{VividPurple}{\textbf{React, React Native, Linux, BASH, GitHub Actions, AWS S3, AWS Amplify}}
+\end{itemize}
+
+\divider
+
+\large \textcolor{VividPurple}{\href{https://m16labs.com}{\textbf{Meta16Labs}}} - SDE Intern ~~~~~~ \normalsize \faCalendar Feb 2022 - May 2022
+
+\begin{itemize}
+  \item Worked with the Patient journey and history management on \href{https://metahos.com/}{\underline{MetaHOS software}} 
+  \item Worked on OPD and Camps modules
+  \item Implemented the WhatsApp and SMS services on the backend
+  \item Used : \textcolor{VividPurple}{\textbf{React, React Native, NodeJs, ExpressJs, AWS S3, MongoDB }}
+\end{itemize}
+
+\divider
+
+\large \textcolor{VividPurple}{\href{https://vinnovatetechnologies.com}{\textbf{Vinnovate Technologies}}} - SDE Intern ~~~~~~ \normalsize \faCalendar Dec 2021 - Jan 2022
+
+\begin{itemize}
+  \item Implemented bulk uploads feature over web sockets and OCR of bills and resume
+  \item Automated the process of PDF making, parsing, internal linking, and dynamic changes according to inputs and directions taken from Excel and CSV files
+  \item Used : \textcolor{VividPurple}{\textbf{React, NodeJs, ExpressJs, MongoDB }}
+\end{itemize}
+
+\cvsection{Projects}
+
+\large \textcolor{VividPurple}{\href{https://github.com/m3rashid/exam-portal}{\textbf{Exam Portal}}} ~~~~~~ \normalsize \faCalendar Oct 2022 - Dec 2022
+\begin{itemize}
+  \item Objective and Subjective exam papers, accounts management of all involved parties, etc 
+  \item Analytics and dashboards for student Performance, overall test paper, dashboards,  etc.
+  \item Currently used in production with an \href{http://leagueonline.sg}{\underline{academic organization in singapore}}
+  \item Used : \textcolor{VividPurple}{\textbf{React, NodeJs, ExpressJs, MongoDB, AWS EC2, Cloudflare }}
+\end{itemize}
+
+\divider
+
+\large \textcolor{VividPurple}{\href{}{\textbf{Hospital Management System}}} ~~~~~~ \normalsize \faCalendar Aug 2022 - Feb 2023
+\begin{itemize}
+  \item Real-Time Hospital management application intended for JMI Health Centre
+  \item Available as a web and native desktop app for Windows \& Debian-based Linux distros
+  \item Currently in production and used on the JMI Internal Network
+  \item Used : \textcolor{VividPurple}{\textbf{React, NodeJs, ExpressJs, PostgreSQL, Rust, Tauri }}
+\end{itemize}
+
+\divider
+
+\large \textcolor{VividPurple}{\href{https://github.com/m3rashid/DBMS_Project}{\textbf{JMI Connect}}} ~~~~~~ \normalsize \faCalendar May 2022 - July 2023
+\begin{itemize}
+  \item A social media application with toxicity analysis of all user posts and real-time chat and full admin controls to remove, create and modify users, topics, posts, etc.
+  \item Used : \textcolor{VividPurple}{\textbf{React, NodeJs, ExpressJs, PostgreSQL, MySQL, SQL Server, Azure, Cloudflare }}
+\end{itemize}
+ 
+\divider
+
+\large \textcolor{VividPurple}{\href{https://github.com/sheikhazhanmohammed/ZUNI}{\textbf{ZUNI}}} ~~~~~~ \normalsize \faCalendar Dec 2021 - Dec 2021
+\begin{itemize}
+  \item Web application where Users register with a username and their face as a password
+  \item The system is smart enough to distinguish a real face from a printed face, a face on the screen, an image with multiple faces, etc.
+  \item Used : \textcolor{VividPurple}{\textbf{React, Netlify, SCSS, Flask, SQLite, PyTorch, Tensorflow }}
+\end{itemize}
+
+\divider
+
+\large \textcolor{VividPurple}{\href{https://github.com/m3rashid/taxtds-new}{\textbf{TAX TDS}}} ~~~~~~ \normalsize \faCalendar Sept 2021 - Feb 2022
+\begin{itemize}
+  \item A local business and finance directory website where users register their services and public can quote for those services
+  \item Equipped with all services like auth, mailer, uploads, notifications, etc.
+  \item Used : \textcolor{VividPurple}{\textbf{React, Typescript, TailwindCSS, NodeJs, ExpressJs, EJS, MongoDB }}
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Volunteer Work}
+
+\large \textcolor{VividPurple}{\href{https://shiksha-sopan.org}{\textbf{Shiksha Sopan, IIT Kanpur}}}
+
+\large Frontend Developer
+\cvevent{}{}{May 2022 - July 2022}{}
+
+\begin{itemize}
+  \item Collaborated on \href{https://naest.shiksha-sopan.org/}{\underline{NAEST exam portal}}
+  \item Worked with Dr. HC Verma Sir and other amazing people at \href{https://www.iitk.ac.in/dora/shiksha-sopan}{\textbf{Sopan ashram}}
+  \item Used : \textcolor{VividPurple}{\textbf{React, Typescript }} 
+\end{itemize}
+
+\cvsection{Worked With}
+\begin{itemize}
+    \item \textbf{Languages}:  Javascript, Typescript, Go, Python, C/C++, Rust, SQL
+    \item \textbf{Frameworks}:  Express, NodeJs, Go-Fiber, Flask
+    \item \textbf{Databases}:  MongoDB, PostgreSQL, MySQL
+    \item \textbf{CDNs}:  CloudFlare, Surge, AWS Amplify, Netlify
+    \item \textbf{AWS}:  EC2, S3, RDS, Amplify, Cloudfront
+    \item \textbf{CI/CD}:  Github Actions
+    \item \textbf{Shell Scripting}:  BASH
+    \item \textbf{Tools}:  Ubuntu Linux, Git + GitHub, VSCode/WebStorm, Android Studio
+\end{itemize}
+
+\cvsection{Skills}
+\begin{itemize}
+    \item {Critical Thinking}, {Problem Solving}
+    \item {Self Critic} {Accountability}
+    \item {Collaboration/Teamwork}
+    \item {Communication}, {Presentation Skills}
+\end{itemize}
+
+\cvsection{Education}
+
+\textbf{B.Tech. in Computer Science}
+
+\textcolor{VividPurple}{\href{https://www.jmi.ac.in}{Jamia Millia Islamia}} ~~~ 9.69 CPI
+\cvevent{}{}{2020 - 2024}{}
+
+\textbf{Intermediate Science (PCM)}
+
+\textcolor{VividPurple}{\href{https://www.amu.ac.in/schools/saiyyid-hamid-senior-secondary-school-boys/home-page}{SHSSS, AMU}} ~~~ 83.2%
+\cvevent{}{}{2017 - 2019}{}
+
+\textbf{Elementory \& High School}
+
+\textcolor{VividPurple}{\href{http://davntpc.org}{D.A.V. Public School}} ~~~ 10 CGPA
+\cvevent{}{}{2005 - 2017}{}
+
+\end{paracol}
+
+\end{document}
